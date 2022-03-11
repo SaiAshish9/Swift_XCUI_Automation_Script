@@ -16,6 +16,9 @@
 		973314C327DB3B1700A305A0 /* XCUIAutomationScriptsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973314C227DB3B1700A305A0 /* XCUIAutomationScriptsTests.swift */; };
 		973314CD27DB3B1700A305A0 /* XCUIAutomationScriptsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973314CC27DB3B1700A305A0 /* XCUIAutomationScriptsUITests.swift */; };
 		973314CF27DB3B1800A305A0 /* XCUIAutomationScriptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973314CE27DB3B1800A305A0 /* XCUIAutomationScriptsUITestsLaunchTests.swift */; };
+		973314DD27DB56FF00A305A0 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973314DC27DB56FF00A305A0 /* BaseTest.swift */; };
+		973314E527DB587900A305A0 /* HomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973314E427DB587900A305A0 /* HomeScreenTests.swift */; };
+		973314E727DB589F00A305A0 /* HomeScreenPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973314E627DB589F00A305A0 /* HomeScreenPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		973314C827DB3B1700A305A0 /* XCUIAutomationScriptsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUIAutomationScriptsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		973314CC27DB3B1700A305A0 /* XCUIAutomationScriptsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIAutomationScriptsUITests.swift; sourceTree = "<group>"; };
 		973314CE27DB3B1800A305A0 /* XCUIAutomationScriptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIAutomationScriptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		973314DC27DB56FF00A305A0 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		973314E427DB587900A305A0 /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
+		973314E627DB589F00A305A0 /* HomeScreenPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +127,37 @@
 		973314CB27DB3B1700A305A0 /* XCUIAutomationScriptsUITests */ = {
 			isa = PBXGroup;
 			children = (
+				973314E127DB57A300A305A0 /* Tests */,
+				973314E027DB579C00A305A0 /* Utils */,
+				973314DB27DB56E100A305A0 /* PageObjects */,
 				973314CC27DB3B1700A305A0 /* XCUIAutomationScriptsUITests.swift */,
 				973314CE27DB3B1800A305A0 /* XCUIAutomationScriptsUITestsLaunchTests.swift */,
 			);
 			path = XCUIAutomationScriptsUITests;
+			sourceTree = "<group>";
+		};
+		973314DB27DB56E100A305A0 /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				973314DC27DB56FF00A305A0 /* BaseTest.swift */,
+				973314E627DB589F00A305A0 /* HomeScreenPage.swift */,
+			);
+			path = PageObjects;
+			sourceTree = "<group>";
+		};
+		973314E027DB579C00A305A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		973314E127DB57A300A305A0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				973314E427DB587900A305A0 /* HomeScreenTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				973314CD27DB3B1700A305A0 /* XCUIAutomationScriptsUITests.swift in Sources */,
+				973314DD27DB56FF00A305A0 /* BaseTest.swift in Sources */,
+				973314E727DB589F00A305A0 /* HomeScreenPage.swift in Sources */,
+				973314E527DB587900A305A0 /* HomeScreenTests.swift in Sources */,
 				973314CF27DB3B1800A305A0 /* XCUIAutomationScriptsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
